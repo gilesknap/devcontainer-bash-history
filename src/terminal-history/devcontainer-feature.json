@@ -1,6 +1,6 @@
 {
     "name": "BASH terminal auto history configuration",
-    "id": "BASH",
+    "id": "shared-bash-config",
     "version": "1.0.0",
     "containerEnv": {
         "CONFIG_FOLDER": "/devcontainer_rc",
