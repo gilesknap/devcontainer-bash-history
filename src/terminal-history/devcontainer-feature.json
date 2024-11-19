@@ -2,18 +2,11 @@
     "name": "BASH terminal auto history configuration",
     "id": "shared-bash-config",
     "version": "1.0.0",
+    "description": "Make default BASH terminal nicer",
     "containerEnv": {
         "CONFIG_FOLDER": "/devcontainer_rc",
         "CONFIG_STAGING": "/devcontainer_staging"
     },
-    "description": "Make default BASH terminal nicer.",
-    // "options": {
-    //     "host_config_folder": {
-    //         "type": "string",
-    //         "default": "${localEnv:HOME}/.config/devcontainer_rc",
-    //         "description": "host folder for devcontainer shell configuration"
-    //     }
-    // },
     "mounts": [
         {
             "source": "${localEnv:HOME}/.config/devcontainer_rc",
