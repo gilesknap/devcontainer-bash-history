@@ -22,8 +22,10 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: "Install latest devcontainer CLI"
-        run: npm install -g @devcontainers/cli
-
+        run: |
+          npm install -g @devcontainers/cli
+          mkdir -p ~/.config/devcontainer_rc
+          
       - name: "Generating tests for '${{ matrix.features }}' against '${{ matrix.baseImage }}'"
         run: devcontainer features test --skip-scenarios -f ${{ matrix.features }} -i ${{ matrix.baseImage }} .
 
