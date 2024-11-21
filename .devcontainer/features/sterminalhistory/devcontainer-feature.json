@@ -1,6 +1,6 @@
 {
 "name": "BASH terminal auto history configuration",
-    "id": "bash-term",
+    "id": "persistent-bash-history",
     "version": "1.0.0",
     "description": "Make default BASH terminal nicer",
     "containerEnv": {
