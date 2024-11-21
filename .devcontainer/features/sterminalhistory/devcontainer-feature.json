@@ -1,6 +1,6 @@
 {
     "name": "My Next Favorite Color",
-    "id": "bashconfigtwo",
+    "id": "onfigtwo",
     "version": "1.1.1",
-    "description": "Make default BASH terminal nicer again"
+    "description": "Another feature to remind you of your favorite color"
 }
