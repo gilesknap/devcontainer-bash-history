@@ -1,0 +1,18 @@
+{
+    "name": "BASH terminal auto history configuration",
+    "id": "bashconfig",
+    "version": "1.0.0",
+    "description": "Make default BASH terminal nicer",
+    "containerEnv": {
+        "CONFIG_FOLDER": "/devcontainer_rc",
+        "CONFIG_STAGING": "/devcontainer_staging"
+    },
+    "mounts": [
+        {
+            "source": "${localEnv:HOME}/.config/devcontainer_rc",
+            "target": "/devcontainer_rc",
+            "type": "bind"
+        }
+    ],
+    "onCreateCommand": "bash /devcontainer_staging/onCreateCommand.sh"
+}
