@@ -1,5 +1,5 @@
-#!/bin/bash
+#!/bin/sh
 set -e
 
-echo "Activating feature 'terminal-history'"
-echo "User: ${_REMOTE_USER}     User home: ${_REMOTE_USER_HOME}"
+echo "Activating feature 'color'"
+echo "The provided favorite color is: ${FAVORITE}"
