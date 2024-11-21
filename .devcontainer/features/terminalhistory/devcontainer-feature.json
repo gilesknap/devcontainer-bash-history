@@ -14,5 +14,8 @@
             "type": "bind"
         }
     ],
-    "onCreateCommand": "bash /devcontainer_staging/onCreateCommand.sh"
+    "onCreateCommand": "bash /devcontainer_staging/onCreateCommand.sh",
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/common-utils"
+    ]
 }
