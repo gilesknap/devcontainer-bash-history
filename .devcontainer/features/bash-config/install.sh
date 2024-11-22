@@ -63,6 +63,7 @@ export PS1="\[\033[1;34m\]\W \[\033[0m\]# "
 
 # enable enternal shared history
 export HISTCONTROL=ignoreboth:erasedups
+export HISTSIZE=-1
 export HISTFILESIZE=-1
 export SAVEHIST=-1
 export HISTFILE=$CONFIG_FOLDER/.bash_eternal_history

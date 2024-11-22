@@ -1,7 +1,7 @@
 {
 "name": "Lightweight and configurable BASH eternal history",
     //ID *must* match parent folder name *exactly*
-    "id": "diamond-bash-config",
+    "id": "bash-config",
     "version": "1.0.0",
     "description": "Lightweight BASH setup with eternal history and PS1 tweaks. Fully configurable.",
     "containerEnv": {

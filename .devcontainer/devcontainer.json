@@ -24,7 +24,7 @@
         }
     },
     "features": {
-        "./features/terminalhistory": {}
+        "./features/bash-config": {}
     },
     "runArgs": [
         // Allow the container to access the host X11 display and EPICS CA
