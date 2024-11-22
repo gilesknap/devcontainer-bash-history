@@ -4,7 +4,7 @@
     "id": "bash-config",
     "version": "1.0.0",
     "description": "Lightweight BASH setup with eternal history and PS1 tweaks. Fully configurable.",
-    "documentationURL": "https://github.com/DiamondRC/devcontainer-features/tree/main/.devcontainer/features/bash-config",
+    "documentationURL": "https://github.com/DiamondRC/devcontainer-features/tree/main/src/bash-config",
     "containerEnv": {
         "CONFIG_FOLDER": "/devcontainer_rc",
         "CONFIG_STAGING": "/devcontainer_staging"
