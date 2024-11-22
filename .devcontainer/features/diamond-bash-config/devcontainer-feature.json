@@ -1,8 +1,9 @@
 {
-    "name": "My Final Favorite Color",
-    "id": "colorthree",
+"name": "Lightweight and configurable BASH eternal history",
+    //ID *must* match parent folder name *exactly*
+    "id": "diamond-bash-config",
     "version": "1.0.0",
-    "description": "Another feature to remind you of your favorite color",
+    "description": "Lightweight BASH setup with eternal history and PS1 tweaks. Fully configurable.",
     "containerEnv": {
         "CONFIG_FOLDER": "/devcontainer_rc",
         "CONFIG_STAGING": "/devcontainer_staging"
