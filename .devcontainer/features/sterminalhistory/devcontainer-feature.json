@@ -1,6 +1,6 @@
 {
 "name": "BASH terminal auto history configuration",
-    "id": "persistent-bash-history",
+    "id": "colorthree",
     "version": "1.0.0",
     "description": "Make default BASH terminal nicer",
     "containerEnv": {
