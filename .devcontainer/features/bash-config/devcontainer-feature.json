@@ -2,7 +2,7 @@
     "name": "Lightweight and configurable BASH eternal history",
     //ID *must* match parent folder name *exactly*
     "id": "bash-config",
-    "version": "1.0.0",
+    "version": "test",
     "description": "Lightweight BASH setup with eternal history and PS1 tweaks. Fully configurable.",
     "documentationURL": "https://raw.githubusercontent.com/DiamondRC/devcontainer-features/refs/heads/main/.devcontainer/features/bash-config/README.md",
     "containerEnv": {
