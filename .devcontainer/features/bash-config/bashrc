@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# This bashrc will be source from /root/.bashrc upon launch of every terminal
+# in a devcontainer that uses the bash-config feature from
+# https://github.com/DiamondLightSource/devcontainer-features
+
+# This file is initialized by bash-config, but you are then free to edit it
+
+# execute default, opinionated settings - delete this line to remove defaults
+source $CONFIG_FOLDER/feature_settings_rc
+
+# add your personal custom settings below
