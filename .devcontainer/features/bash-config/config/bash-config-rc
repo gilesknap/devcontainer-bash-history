@@ -37,3 +37,10 @@ __bash_prompt() {
 }
 __bash_prompt
 export PROMPT_DIRTRIM=4
+
+# enable bash completion for git
+if [[ -f /usr/share/bash-completion/completions/git ]]; then
+  source /usr/share/bash-completion/completions/git
+elif [[ -f /etc/bash_completion.d/git ]]; then
+  source /etc/bash_completion.d/git
+fi
