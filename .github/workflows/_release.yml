@@ -15,10 +15,10 @@ jobs:
 
       - name: patch in version tag
         # patch the version tag if the version is a valid semver. If not then
-        # default to 0.0.0-b1 (only when using workflow_dispatch for tests)
+        # default to 0.0.1-b1 (only when using workflow_dispatch for tests)
         run: |
           if [[ ${{ github.ref_name }} =~ ^[0-9]+\.[0-9]+.+ ]] ; then
-            sed -i s/0\.0\.0-b1/${{ github.ref_name }}/ $(find .devcontainer -name devcontainer-feature.json)
+            sed -i s/0\.0\.1-b1/${{ github.ref_name }}/ $(find .devcontainer -name devcontainer-feature.json)
             # dump the modified json for debugging
             cat $(find .devcontainer -name devcontainer-feature.json)
           fi

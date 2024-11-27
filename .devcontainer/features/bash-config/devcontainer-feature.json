@@ -5,7 +5,7 @@
     // a default beta version that is replaced by CI when doing tagged releases
     "version": "0.0.1-b1",
     "description": "Lightweight BASH setup with eternal history and PS1 tweaks. Fully configurable.",
-    "documentationURL": "https://raw.githubusercontent.com/DiamondRC/devcontainer-features/refs/heads/main/.devcontainer/features/bash-config/README.md",
+    "documentationURL": "https://raw.githubusercontent.com/DiamondLightSource/devcontainer-features/refs/heads/main/.devcontainer/features/bash-config/README.md",
     "containerEnv": {
         "CONFIG_FOLDER": "/bash-config",
         "CONFIG_STAGING": "/bash-config-staging"
