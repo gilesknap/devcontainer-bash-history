@@ -7,6 +7,13 @@
 # This file is initialized by bash-config, but you are then free to edit it
 
 # execute default, opinionated settings - delete this line to remove defaults
-source $CONFIG_FOLDER/feature_settings_rc
+source $CONFIG_FOLDER/bash-config-rc
 
-# add your personal custom settings below
+if [ ! -f /one-time ]; then
+
+    # add your personal one time only (container creation) commands here
+
+    touch /one-time
+fi
+
+# add your personal settings for every shell below
