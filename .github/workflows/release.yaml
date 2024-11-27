@@ -1,10 +1,12 @@
 name: "Release dev container features & Generate Documentation"
 on:
   workflow_dispatch:
+  push:
+    branches:
+      - main
 
 jobs:
   deploy:
-    if: ${{ github.ref == 'refs/heads/main' }}
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -13,13 +15,23 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: patch in version tag
+        # patch the version tag if the version is a valid semver. If not the
+        # default to the
+        run: |
+          if [[ ${{ github.ref_name }} =~ ^[0-9]+\.[0-9]+.+ ]] ; then
+            sed -i s/0\.0\.0-b1/${{ github.ref_name }}/ $(find .devcontainer -name devcontainer-feature.json)
+            # dump the modified json for debugging
+            cat $(find .devcontainer -name devcontainer-feature.json)
+          fi
+
       - name: "Publish Features"
         uses: devcontainers/action@v1
         with:
           publish-features: "true"
           base-path-to-features: "./src"
           generate-docs: "true"
-          
+
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
