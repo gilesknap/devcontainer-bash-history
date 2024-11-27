@@ -7,15 +7,15 @@
     "description": "Lightweight BASH setup with eternal history and PS1 tweaks. Fully configurable.",
     "documentationURL": "https://raw.githubusercontent.com/DiamondRC/devcontainer-features/refs/heads/main/.devcontainer/features/bash-config/README.md",
     "containerEnv": {
-        "CONFIG_FOLDER": "/devcontainer_rc",
-        "CONFIG_STAGING": "/devcontainer_staging"
+        "CONFIG_FOLDER": "/bash-config",
+        "CONFIG_STAGING": "/bash-config-staging"
     },
     "mounts": [
         {
-            "source": "${localEnv:HOME}/.config/devcontainer_rc",
-            "target": "/devcontainer_rc",
+            "source": "${localEnv:HOME}/.config/bash-config",
+            "target": "/bash-config",
             "type": "bind"
         }
     ],
-    "onCreateCommand": "bash /devcontainer_staging/onCreateCommand.sh"
+    "onCreateCommand": "bash /bash-config-staging/onCreateCommand.sh"
 }
