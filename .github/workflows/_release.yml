@@ -1,23 +1,21 @@
 name: "Release dev container features & Generate Documentation"
 on:
+  # use this to test releasing of the devcontainer features in a branch
   workflow_dispatch:
-  push:
-    branches:
-      - main
+  workflow_call:
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
     permissions:
       contents: write
-      pull-requests: write
       packages: write
     steps:
       - uses: actions/checkout@v4
 
       - name: patch in version tag
-        # patch the version tag if the version is a valid semver. If not the
-        # default to the
+        # patch the version tag if the version is a valid semver. If not then
+        # default to 0.0.0-b1 (only when using workflow_dispatch for tests)
         run: |
           if [[ ${{ github.ref_name }} =~ ^[0-9]+\.[0-9]+.+ ]] ; then
             sed -i s/0\.0\.0-b1/${{ github.ref_name }}/ $(find .devcontainer -name devcontainer-feature.json)
@@ -34,6 +32,9 @@ jobs:
 
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # the example features publishes docs like below - I believe this is only
+      # relevant if publishing to the marketplace?
 
       # - name: Create PR for Documentation
       #   id: push_image_info
