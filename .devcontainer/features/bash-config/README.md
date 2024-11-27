@@ -15,6 +15,22 @@ To use this feature in an individual devcontainer, add the following to your `.d
 
 The initializeCommand is required to create the directory for the bash-config folder in your home folder on the host, the very first time this is executed. Features do not have an InitializeCommand, so the devcontainer.json must do this.
 
+## Global Installation
+
+To use this feature in all devcontainers on your workstation, add the following to User setting.json:
+
+```json
+    "dev.containers.defaultFeatures": {
+        "ghcr.io/gilesknap/devcontainer-features/bash-config:1.1.0"
+    }
+```
+
+Also, one time only, make sure the host folder for bash-config is created:
+
+```bash
+mkdir -p $HOME/.config/bash-config
+```
+
 
 ## features
 

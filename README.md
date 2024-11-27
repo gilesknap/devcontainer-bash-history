@@ -6,7 +6,7 @@ Devcontainer features for use in Python Copier Template or any other devcontaine
 
 Adds customizations to the the bash shell that can be shared across all developer containers using the feature.
 
-See details in the [bash-config README](src/bash-config/README.md).
+See details in the [bash-config README](.devcontainer/features/bash-config/README.md).
 
 ## other
 
